@@ -20,8 +20,8 @@
                                         $dept = $conn->query("SELECT * from employee order by fullname asc");
                                         while ($row = $dept->fetch_assoc()) :
                                         ?>
-                                        <option value="<?php echo $row['id']; ?>"><?php echo $row['fullname']; ?>
-                                        </option>
+                                            <option value="<?php echo $row['id']; ?>"><?php echo $row['fullname']; ?>
+                                            </option>
                                         <?php endwhile; ?>
                                     </select>
                                 </div>
@@ -290,64 +290,64 @@
 
                                         while ($row = $wages_info->fetch_assoc()) :
                                         ?>
-                                        <tr>
-                                            <td class="text-center"><?php echo $i++; ?></td>
-                                            <td><b><?php echo $row['fullname']; ?></b></td>
-                                            <td><b><?php echo $row['position']; ?></b></td>
-                                            <td><b><?php echo $row['employee_no']; ?></b></td>
-                                            <td><b><?php echo $row['monthly_salary']; ?></b></td>
-                                            <td><b><?php echo $row['pera']; ?></b></td>
-                                            <td><b><?php echo $row['gross_amount_earned']; ?></b></td>
+                                            <tr>
+                                                <td class="text-center"><?php echo $i++; ?></td>
+                                                <td><b><?php echo $row['fullname']; ?></b></td>
+                                                <td><b><?php echo $row['position']; ?></b></td>
+                                                <td><b><?php echo $row['employee_no']; ?></b></td>
+                                                <td><b><?php echo $row['monthly_salary']; ?></b></td>
+                                                <td><b><?php echo $row['pera']; ?></b></td>
+                                                <td><b><?php echo $row['gross_amount_earned']; ?></b></td>
 
-                                            <!-- PAGIBIG -->
-                                            <td><b><?php echo $row['pagibig_ps']; ?></b></td>
-                                            <td><b><?php echo $row['pagibig_gs']; ?></b></td>
-                                            <td><b><?php echo $row['pagibig_mp3']; ?></b></td>
+                                                <!-- PAGIBIG -->
+                                                <td><b><?php echo $row['pagibig_ps']; ?></b></td>
+                                                <td><b><?php echo $row['pagibig_gs']; ?></b></td>
+                                                <td><b><?php echo $row['pagibig_mp3']; ?></b></td>
 
-                                            <!-- GSIS -->
-                                            <td><b><?php echo $row['gsis_ps']; ?></b></td>
-                                            <td><b><?php echo $row['gsis_gs']; ?></b></td>
+                                                <!-- GSIS -->
+                                                <td><b><?php echo $row['gsis_ps']; ?></b></td>
+                                                <td><b><?php echo $row['gsis_gs']; ?></b></td>
 
-                                            <!-- SIF -->
-                                            <td><b><?php echo $row['sif']; ?></b></td>
+                                                <!-- SIF -->
+                                                <td><b><?php echo $row['sif']; ?></b></td>
 
-                                            <!-- PhilHealth -->
-                                            <td><b><?php echo $row['philhealth_ps']; ?></b></td>
-                                            <td><b><?php echo $row['philhealth_gs']; ?></b></td>
+                                                <!-- PhilHealth -->
+                                                <td><b><?php echo $row['philhealth_ps']; ?></b></td>
+                                                <td><b><?php echo $row['philhealth_gs']; ?></b></td>
 
-                                            <!-- Withholding Tax -->
-                                            <td><b><?php echo $row['withholding_tax']; ?></b></td>
+                                                <!-- Withholding Tax -->
+                                                <td><b><?php echo $row['withholding_tax']; ?></b></td>
 
-                                            <!-- Other Deductions -->
-                                            <td><b><?php echo $row['prg']; ?></b></td>
-                                            <td><b><?php echo $row['cnl']; ?></b></td>
-                                            <td><b><?php echo $row['eml']; ?></b></td>
-                                            <td><b><?php echo $row['mpl']; ?></b></td>
-                                            <td><b><?php echo $row['gfal']; ?></b></td>
-                                            <td><b><?php echo $row['cpl']; ?></b></td>
-                                            <td><b><?php echo $row['help']; ?></b></td>
-                                            <td><b><?php echo $row['cfi']; ?></b></td>
-                                            <td><b><?php echo $row['csb']; ?></b></td>
-                                            <td><b><?php echo $row['disallowance_fd']; ?></b></td>
+                                                <!-- Other Deductions -->
+                                                <td><b><?php echo $row['prg']; ?></b></td>
+                                                <td><b><?php echo $row['cnl']; ?></b></td>
+                                                <td><b><?php echo $row['eml']; ?></b></td>
+                                                <td><b><?php echo $row['mpl']; ?></b></td>
+                                                <td><b><?php echo $row['gfal']; ?></b></td>
+                                                <td><b><?php echo $row['cpl']; ?></b></td>
+                                                <td><b><?php echo $row['help']; ?></b></td>
+                                                <td><b><?php echo $row['cfi']; ?></b></td>
+                                                <td><b><?php echo $row['csb']; ?></b></td>
+                                                <td><b><?php echo $row['disallowance_fd']; ?></b></td>
 
-                                            <!-- Total Deductions and Net Salary -->
-                                            <td><b><?php echo $row['total_deductions']; ?></b></td>
-                                            <td><b><?php echo $row['net_salary']; ?></b></td>
+                                                <!-- Total Deductions and Net Salary -->
+                                                <td><b><?php echo $row['total_deductions']; ?></b></td>
+                                                <td><b><?php echo $row['net_salary']; ?></b></td>
 
-                                            <!-- Net Received and Employee Signatures -->
-                                            <td><b><?php echo $row['net_received_15']; ?></b></td>
-                                            <td><b><?php echo $row['employee_signature_15']; ?></b></td>
-                                            <td><b><?php echo $row['net_received_16_31']; ?></b></td>
-                                            <td><b><?php echo $row['employee_signature_16_31']; ?></b></td>
+                                                <!-- Net Received and Employee Signatures -->
+                                                <td><b><?php echo $row['net_received_15']; ?></b></td>
+                                                <td><b><?php echo $row['employee_signature_15']; ?></b></td>
+                                                <td><b><?php echo $row['net_received_16_31']; ?></b></td>
+                                                <td><b><?php echo $row['employee_signature_16_31']; ?></b></td>
 
-                                            <!-- View Payroll Button -->
-                                            <!-- <td class="text-center">
+                                                <!-- View Payroll Button -->
+                                                <!-- <td class="text-center">
                                     <button class="btn btn-sm btn-outline-primary view_payroll"
                                         data-id="<?php echo $row['id'] ?>" type="button">
                                         <i class="fa fa-eye"></i>
                                     </button>
                                 </td> -->
-                                        </tr>
+                                            </tr>
                                         <?php endwhile; ?>
                                     </tbody>
                                 </table>
@@ -363,114 +363,114 @@
 </div>
 
 <style>
-.card-header,
-.control-label {
-    color: black;
-}
+    .card-header,
+    .control-label {
+        color: black;
+    }
 
-.row {
-    display: flex;
-    flex-wrap: nowrap;
-}
+    .row {
+        display: flex;
+        flex-wrap: nowrap;
+    }
 
-/* .card {
+    /* .card {
         background: #d1d3e0;
     } */
 
-.new {
-    padding: 10px;
-    width: 100%;
-    height: 100%;
-    background: #d1d3e0;
-    background-size: cover;
-}
+    .new {
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+        background: #d1d3e0;
+        background-size: cover;
+    }
 
-td,
-tr {
-    background-color: #fafafa;
-    vertical-align: middle !important;
-}
+    td,
+    tr {
+        background-color: #fafafa;
+        vertical-align: middle !important;
+    }
 
-td p {
-    margin: unset;
-}
+    td p {
+        margin: unset;
+    }
 
-img {
-    max-width: 100px;
-    max-height: 150px;
-}
+    img {
+        max-width: 100px;
+        max-height: 150px;
+    }
 </style>
 
 <script>
-function _reset() {
-    $(' [name="id" ]').val('');
-    $('#manage-deductions').get(0).reset();
-    $('.select2').val('').trigger('change');
-}
-$(document).ready(function() {
-    $('.select2').select2();
-    $('#manage-deductions').submit(function(e) {
-        e.preventDefault();
+    function _reset() {
+        $(' [name="id" ]').val('');
+        $('#manage-deductions').get(0).reset();
+        $('.select2').val('').trigger('change');
+    }
+    $(document).ready(function() {
+        $('.select2').select2();
+        $('#manage-deductions').submit(function(e) {
+            e.preventDefault();
+            $.ajax({
+                url: 'ajax.php?action=save_deductions',
+                data: new FormData($(this)[0]),
+                cache: false,
+                contentType: false,
+                processData: false,
+                method: 'POST',
+                type: 'POST',
+                success: function(resp) {
+                    if (resp == 1) {
+                        alert_toast("Data successfully added ", 'success');
+                        setTimeout(function() {
+                            location.reload();
+                        }, 1500);
+                    } else if (resp == 2) {
+                        alert_toast(" Data successfully updated", 'success');
+                        setTimeout(function() {
+                            location.reload();
+                        }, 1500);
+                    } else if (resp == 3) {
+                        alert_toast("Employee already exists ", 'danger');
+                    }
+                }
+            });
+        });
+        $('.edit_deductions').click(function() {
+                var
+                    form = $('#manage-deductions');
+                form.get(0).reset();
+                form.find(
+                    " [name='id' ] ").val($(this).attr('data-id'));
+                form.find(" [name = 'employee_id']
+                    ").val($(this).attr('data-employee_id')).trigger('change'); form.find(" [
+                        name = 'no_of_hours'
+                    ]
+                    ").val($(this).attr('data-no_of_hours')); form.find(" [name = 'rate_per_hour']
+                    ").val($(this).attr('data-rate_per_hour')); form.find(" [name = 'undertime']
+                    ").val($(this).attr('data-undertime')); form.find(" [name = 'overtime']
+                    ").val($(this).attr('data-overtime')); }); $('.delete_deductions').click(function() { _conf("
+                    Are you sure to delete this employee wages information ? ", "
+                    delete_deductions " , [$(this)
+                    .attr('data-id')]);
+        });
+    });
+
+    function delete_deductions(id) {
         $.ajax({
-            url: 'ajax.php?action=save_deductions',
-            data: new FormData($(this)[0]),
-            cache: false,
-            contentType: false,
-            processData: false,
+            url: 'ajax.php?action=delete_deductions',
             method: 'POST',
-            type: 'POST',
+            data: {
+                id: id
+            },
             success: function(resp) {
                 if (resp == 1) {
-                    alert_toast("Data successfully added ", 'success');
+                    alert_toast(" Data successfully deleted", 'success');
                     setTimeout(function() {
                         location.reload();
                     }, 1500);
-                } else if (resp == 2) {
-                    alert_toast(" Data successfully updated", 'success');
-                    setTimeout(function() {
-                        location.reload();
-                    }, 1500);
-                } else if (resp == 3) {
-                    alert_toast("Employee already exists ", 'danger');
                 }
             }
         });
-    });
-    $('.edit_deductions').click(function() {
-            var
-                form = $('#manage-deductions');
-            form.get(0).reset();
-            form.find(
-                " [name='id' ] ").val($(this).attr('data-id'));
-            form.find(" [name = 'employee_id']
-                ").val($(this).attr('data-employee_id')).trigger('change'); form.find(" [
-                    name = 'no_of_hours'
-                ]
-                ").val($(this).attr('data-no_of_hours')); form.find(" [name = 'rate_per_hour']
-                ").val($(this).attr('data-rate_per_hour')); form.find(" [name = 'undertime']
-                ").val($(this).attr('data-undertime')); form.find(" [name = 'overtime']
-                ").val($(this).attr('data-overtime')); }); $('.delete_deductions').click(function() { _conf("
-                Are you sure to delete this employee wages information ? ", "
-                delete_deductions " , [$(this)
-                .attr('data-id')]);
-    });
-});
-
-function delete_deductions(id) {
-    $.ajax({
-        url: 'ajax.php?action=delete_deductions',
-        method: 'POST',
-        data: {
-            id: id
-        },
-        success: function(resp) {
-            if (resp == 1) {
-                alert_toast(" Data successfully deleted", 'success');
-                setTimeout(function() {
-                    location.reload();
-                }, 1500);
-            }
-        }
-    });
-}
+    }
 </script>

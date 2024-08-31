@@ -183,16 +183,16 @@ class Action
 			$i = 1;
 			while ($i == 1) {
 				$e_num = date('Y') . '-' . mt_rand(1, 9999);
-				$chk = $this->db->query("SELECT * FROM employee where employee_no = '$e_num' ")->num_rows;
+				$chk = $this->db->query("SELECT * FROM employee1 where fullname = '$e_num' ")->num_rows;
 				if ($chk <= 0) {
 					$i = 0;
 				}
 			}
-			$data .= ", employee_no='$e_num' ";
-			$save = $this->db->query("INSERT INTO employee set " . $data);
+			$data .= ", fullname='$e_num' ";
+			$save = $this->db->query("INSERT INTO employee1 set " . $data);
 			$employee_id = $this->db->insert_id;
 		} else {
-			$save = $this->db->query("UPDATE employee set " . $data . " where id=" . $id);
+			$save = $this->db->query("UPDATE employee1 set " . $data . " where id=" . $id);
 			$employee_id = $id;
 		}
 		if ($save) {

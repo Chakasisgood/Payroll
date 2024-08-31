@@ -1,7 +1,7 @@
 <?php
 include 'db_connect.php';
 if (isset($_GET['id'])) {
-    $qry = $conn->query("SELECT * FROM employee where id = " . $_GET['id'])->fetch_array();
+    $qry = $conn->query("SELECT * FROM employee1 where id = " . $_GET['id'])->fetch_array();
     foreach ($qry as $k => $v) {
         $$k = $v;
     }
